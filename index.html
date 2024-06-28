@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinheria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="age-check">
+        <h1>Você tem mais de 18 anos?</h1>
+        <button id="yes-button">Sim</button>
+        <button id="no-button">Não</button>
+    </div>
+    <div id="home-page" style="display: none;">
+        <h1>Bem-vindo à Vinheria</h1>
+        <div id="wines">       
+            <div class="wine">
+                <img src="images/wine1.jpg" alt="Vinho 1">
+                <h2>Vinho 1</h2>
+                <button class="buy-button" data-wine="1">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<div id="price-calculator">
+    <h2>Calculadora de Preços</h2>
+    <label for="quantity">Quantidade de Garrafas:</label>
+    <input type="number" id="quantity" min="1" value="1">
+    <p>Preço Total: R$<span id="total-price">0.00</span></p>
+</div>
+
+<div id="discount">
+    <h2>Aplicar Cupom de Desconto</h2>
+    <input type="text" id="coupon-code" placeholder="Digite o cupom">
+    <button id="apply-coupon">Aplicar</button>
+    <p id="discount-message"></p>
+</div>
+
